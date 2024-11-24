@@ -1,674 +1,773 @@
 <!DOCTYPE html>
 <!-- saved from url=(0047)https://noboundary.web.fc2.com/gallery_new.html -->
-<html lang="ja"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="ja">
 
-<title>gallery</title>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>gallery</title>
 
-<script src="./gallery_files/script_gallery.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-<!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+  <script src="./gallery_files/script_gallery.js"></script>
 
-<link rel="stylesheet" href="./gallery_files/jquery.fancybox.min.css">
-<link rel="stylesheet" type="text/css" href="./gallery_files/gallery_style.css">
+  <!--==============レイアウトを制御する独自のCSSを読み込み===============-->
 
-<!--==============画像を事前に読み込み===============-->
+  <link rel="stylesheet" href="./gallery_files/jquery.fancybox.min.css">
+  <link rel="stylesheet" type="text/css" href="./gallery_files/gallery_style.css">
 
-<link rel="preload" href="https://noboundary.web.fc2.com/images/slide/00.jpg" as="image">
-<link rel="preload" href="https://noboundary.web.fc2.com/images/slide/03_.jpg" as="image">
-<link rel="preload" href="https://noboundary.web.fc2.com/images/slide/05_2.jpg" as="image"> 
-<link rel="preload" href="https://noboundary.web.fc2.com/images/slide/05_3.jpg" as="image">
-<link rel="preload" href="https://noboundary.web.fc2.com/images/slide/06.jpg" as="image">
-<link rel="preload" href="https://noboundary.web.fc2.com/images/slide/07.jpg" as="image">
-<link rel="preload" href="https://noboundary.web.fc2.com/images/slide/08.jpg" as="image">
+  <!--==============画像を事前に読み込み===============-->
 
-<link rel="preload" href="./gallery_files/_00.jpg" as="image">
-<link rel="preload" href="./gallery_files/01.jpg" as="image">
-<link rel="preload" href="./gallery_files/01(1).jpg" as="image">
-<link rel="preload" href="./gallery_files/_01.jpg" as="image">
-<link rel="preload" href="./gallery_files/02.jpg" as="image">
-<link rel="preload" href="./gallery_files/02(1).jpg" as="image">
-<link rel="preload" href="./gallery_files/_02.jpg" as="image">
-<link rel="preload" href="./gallery_files/03.jpg" as="image">
-<link rel="preload" href="./gallery_files/03(1).jpg" as="image">
-<link rel="preload" href="./gallery_files/_03.jpg" as="image">
-<link rel="preload" href="./gallery_files/04.jpg" as="image">
-<link rel="preload" href="./gallery_files/04(1).jpg" as="image">
-<link rel="preload" href="./gallery_files/_04.jpg" as="image">
-<link rel="preload" href="./gallery_files/05.jpg" as="image">
-<link rel="preload" href="./gallery_files/05(1).jpg" as="image">
-<link rel="preload" href="./gallery_files/_05.jpg" as="image">
-<link rel="preload" href="./gallery_files/06.jpg" as="image">
-<link rel="preload" href="./gallery_files/_06.jpg" as="image">
-<link rel="preload" href="./gallery_files/07.jpg" as="image">
-<link rel="preload" href="./gallery_files/_07.jpg" as="image">
-<link rel="preload" href="./gallery_files/_06_.jpg" as="image">
-<link rel="preload" href="./gallery_files/07(1).jpg" as="image">
-<link rel="preload" href="./gallery_files/08.jpg" as="image">
-<link rel="preload" href="./gallery_files/08(1).jpg" as="image">
-<link rel="preload" href="./gallery_files/_08.jpg" as="image">
-<link rel="preload" href="./gallery_files/09.jpg" as="image">
-<link rel="preload" href="./gallery_files/09(1).jpg" as="image">
-<link rel="preload" href="./gallery_files/10(1).jpg" as="image">
-<link rel="preload" href="./gallery_files/_10.jpg" as="image">
-<link rel="preload" href="./gallery_files/11.jpg" as="image">
-<link rel="preload" href="./gallery_files/11(1).jpg" as="image">
-<link rel="preload" href="./gallery_files/_11.jpg" as="image">
-<link rel="preload" href="./gallery_files/12.jpg" as="image">
-<link rel="preload" href="./gallery_files/12(1).jpg" as="image">
-<link rel="preload" href="./gallery_files/00.jpg" as="image">
-<link rel="preload" href="./gallery_files/13.jpg" as="image">
-<link rel="preload" href="./gallery_files/13(1).jpg" as="image">
-<link rel="preload" href="./gallery_files/01(2).jpg" as="image">
-<link rel="preload" href="./gallery_files/14(1).jpg" as="image">
-<link rel="preload" href="./gallery_files/02(2).jpg" as="image">
-<link rel="preload" href="./gallery_files/15(1).jpg" as="image">
-<link rel="preload" href="https://noboundary.web.fc2.com/images/3D/03.jpg" as="image">
-<link rel="preload" href="./gallery_files/04(2).jpg" as="image">
-<link rel="preload" href="./gallery_files/17(1).jpg" as="image">
-<link rel="preload" href="./gallery_files/05(2).jpg" as="image">
-<link rel="preload" href="./gallery_files/18(1).jpg" as="image">
-<link rel="preload" href="./gallery_files/06(1).jpg" as="image">
-<link rel="preload" href="./gallery_files/ugd_kr01.jpg" as="image">
-<link rel="preload" href="./gallery_files/07(2).jpg" as="image">
-<link rel="preload" href="./gallery_files/ugd_kr02.jpg" as="image">
-<link rel="preload" href="./gallery_files/08(2).jpg" as="image">
-<link rel="preload" href="./gallery_files/ugd_sd01.jpg" as="image">
-<link rel="preload" href="./gallery_files/ugd_sd02.jpg" as="image">
-<link rel="preload" href="./gallery_files/ugd_fx01.jpg" as="image">
-<link rel="preload" href="./gallery_files/11(2).jpg" as="image">
-<link rel="preload" href="./gallery_files/ugd_fx02.jpg" as="image">
-<link rel="preload" href="./gallery_files/14(2).jpg" as="image">
-<link rel="preload" href="./gallery_files/11_.jpg" as="image">
-<link rel="preload" href="./gallery_files/15(2).jpg" as="image">
-<link rel="preload" href="./gallery_files/16(2).jpg" as="image">
-<link rel="preload" href="./gallery_files/17(2).jpg" as="image">
-<link rel="preload" href="./gallery_files/18(2).jpg" as="image">
-<link rel="preload" href="./gallery_files/19(1).jpg" as="image">
-<link rel="preload" href="./gallery_files/22(1).jpg" as="image">
-<link rel="preload" href="./gallery_files/23.jpg" as="image">
-<link rel="preload" href="./gallery_files/24.jpg" as="image">
+  <link rel="preload" href="https://noboundary.web.fc2.com/images/slide/00.jpg" as="image">
+  <link rel="preload" href="https://noboundary.web.fc2.com/images/slide/03_.jpg" as="image">
+  <link rel="preload" href="https://noboundary.web.fc2.com/images/slide/05_2.jpg" as="image">
+  <link rel="preload" href="https://noboundary.web.fc2.com/images/slide/05_3.jpg" as="image">
+  <link rel="preload" href="https://noboundary.web.fc2.com/images/slide/06.jpg" as="image">
+  <link rel="preload" href="https://noboundary.web.fc2.com/images/slide/07.jpg" as="image">
+  <link rel="preload" href="https://noboundary.web.fc2.com/images/slide/08.jpg" as="image">
 
-<script src="./gallery_files/saved_resource" charset="UTF-8" async=""></script></head>
+  <link rel="preload" href="./gallery_files/_00.jpg" as="image">
+  <link rel="preload" href="./gallery_files/01.jpg" as="image">
+  <link rel="preload" href="./gallery_files/01(1).jpg" as="image">
+  <link rel="preload" href="./gallery_files/_01.jpg" as="image">
+  <link rel="preload" href="./gallery_files/02.jpg" as="image">
+  <link rel="preload" href="./gallery_files/02(1).jpg" as="image">
+  <link rel="preload" href="./gallery_files/_02.jpg" as="image">
+  <link rel="preload" href="./gallery_files/03.jpg" as="image">
+  <link rel="preload" href="./gallery_files/03(1).jpg" as="image">
+  <link rel="preload" href="./gallery_files/_03.jpg" as="image">
+  <link rel="preload" href="./gallery_files/04.jpg" as="image">
+  <link rel="preload" href="./gallery_files/04(1).jpg" as="image">
+  <link rel="preload" href="./gallery_files/_04.jpg" as="image">
+  <link rel="preload" href="./gallery_files/05.jpg" as="image">
+  <link rel="preload" href="./gallery_files/05(1).jpg" as="image">
+  <link rel="preload" href="./gallery_files/_05.jpg" as="image">
+  <link rel="preload" href="./gallery_files/06.jpg" as="image">
+  <link rel="preload" href="./gallery_files/_06.jpg" as="image">
+  <link rel="preload" href="./gallery_files/07.jpg" as="image">
+  <link rel="preload" href="./gallery_files/_07.jpg" as="image">
+  <link rel="preload" href="./gallery_files/_06_.jpg" as="image">
+  <link rel="preload" href="./gallery_files/07(1).jpg" as="image">
+  <link rel="preload" href="./gallery_files/08.jpg" as="image">
+  <link rel="preload" href="./gallery_files/08(1).jpg" as="image">
+  <link rel="preload" href="./gallery_files/_08.jpg" as="image">
+  <link rel="preload" href="./gallery_files/09.jpg" as="image">
+  <link rel="preload" href="./gallery_files/09(1).jpg" as="image">
+  <link rel="preload" href="./gallery_files/10(1).jpg" as="image">
+  <link rel="preload" href="./gallery_files/_10.jpg" as="image">
+  <link rel="preload" href="./gallery_files/11.jpg" as="image">
+  <link rel="preload" href="./gallery_files/11(1).jpg" as="image">
+  <link rel="preload" href="./gallery_files/_11.jpg" as="image">
+  <link rel="preload" href="./gallery_files/12.jpg" as="image">
+  <link rel="preload" href="./gallery_files/12(1).jpg" as="image">
+  <link rel="preload" href="./gallery_files/00.jpg" as="image">
+  <link rel="preload" href="./gallery_files/13.jpg" as="image">
+  <link rel="preload" href="./gallery_files/13(1).jpg" as="image">
+  <link rel="preload" href="./gallery_files/01(2).jpg" as="image">
+  <link rel="preload" href="./gallery_files/14(1).jpg" as="image">
+  <link rel="preload" href="./gallery_files/02(2).jpg" as="image">
+  <link rel="preload" href="./gallery_files/15(1).jpg" as="image">
+  <link rel="preload" href="https://noboundary.web.fc2.com/images/3D/03.jpg" as="image">
+  <link rel="preload" href="./gallery_files/04(2).jpg" as="image">
+  <link rel="preload" href="./gallery_files/17(1).jpg" as="image">
+  <link rel="preload" href="./gallery_files/05(2).jpg" as="image">
+  <link rel="preload" href="./gallery_files/18(1).jpg" as="image">
+  <link rel="preload" href="./gallery_files/06(1).jpg" as="image">
+  <link rel="preload" href="./gallery_files/ugd_kr01.jpg" as="image">
+  <link rel="preload" href="./gallery_files/07(2).jpg" as="image">
+  <link rel="preload" href="./gallery_files/ugd_kr02.jpg" as="image">
+  <link rel="preload" href="./gallery_files/08(2).jpg" as="image">
+  <link rel="preload" href="./gallery_files/ugd_sd01.jpg" as="image">
+  <link rel="preload" href="./gallery_files/ugd_sd02.jpg" as="image">
+  <link rel="preload" href="./gallery_files/ugd_fx01.jpg" as="image">
+  <link rel="preload" href="./gallery_files/11(2).jpg" as="image">
+  <link rel="preload" href="./gallery_files/ugd_fx02.jpg" as="image">
+  <link rel="preload" href="./gallery_files/14(2).jpg" as="image">
+  <link rel="preload" href="./gallery_files/11_.jpg" as="image">
+  <link rel="preload" href="./gallery_files/15(2).jpg" as="image">
+  <link rel="preload" href="./gallery_files/16(2).jpg" as="image">
+  <link rel="preload" href="./gallery_files/17(2).jpg" as="image">
+  <link rel="preload" href="./gallery_files/18(2).jpg" as="image">
+  <link rel="preload" href="./gallery_files/19(1).jpg" as="image">
+  <link rel="preload" href="./gallery_files/22(1).jpg" as="image">
+  <link rel="preload" href="./gallery_files/23.jpg" as="image">
+  <link rel="preload" href="./gallery_files/24.jpg" as="image">
+
+  <script src="./gallery_files/saved_resource" charset="UTF-8" async=""></script>
+</head>
 
 <body style="background-color: black;">
 
-					<!--ロード設定-----------------------------------------------------------------
+  <!--ロード設定-----------------------------------------------------------------
 					------------------------------------------------------------------------------
 					<div id="loading">
 						<div id="blinking-image">Loading...</div>
 					</div>-->
 
-<!-- gallery -->
-<div class="wrapper">
-
-      <ul class="sort-btn">
-        <li class="sort00 active">all           </li>
-        <li class="sort01">3d digital           </li>
-        <li class="sort02">2d paintings         </li>
-        <li class="sort03">character design     </li>
-      </ul>
-
-  
-  <ul class="grid"><!--/グリッド開始-->
-
-
-        <!--/ブロック-->
-
-        <li class="sort01">
-          <div class="item-content">
-          <a href="./gallery_files/26.jpg" data-fancybox="group1" data-caption="NEO TOKYO challenge"><img src="./gallery_files/26.jpg" alt="" loading="lazy"></a>
-          </div>
-        </li>
-        <li class="sort03">
-          <div class="item-content">
-          <a href="./gallery_files/14.jpg" data-fancybox="group3" data-caption="NEO TOKYO challenge"><img src="./gallery_files/14.jpg" alt="" loading="lazy"></a>
-          </div>
-        </li>
-
-
-        <!--/ブロック-->
-
-        <li class="sort01">
-          <div class="item-content">
-          <a href="./gallery_files/27.jpg" data-fancybox="group1" data-caption="NEO TOKYO challenge"><img src="./gallery_files/27.jpg" alt="" loading="lazy"></a>
-          </div>
-        </li>
-        <li class="sort03">
-          <div class="item-content">
-          <a href="./gallery_files/15.jpg" data-fancybox="group3" data-caption="NEO TOKYO challenge"><img src="./gallery_files/15.jpg" alt="" loading="lazy"></a>
-          </div>
-        </li>
-        <li class="sort03">
-          <div class="item-content">
-          <a href="./gallery_files/16.jpg" data-fancybox="group3" data-caption="NEO TOKYO challenge"><img src="./gallery_files/16.jpg" alt="" loading="lazy"></a>
-          </div>
-        </li>
-
-        <!--/ブロック-->
-
-        <li class="sort01">
-          <div class="item-content">
-          <a href="./gallery_files/28.jpg" data-fancybox="group1" data-caption="NEO TOKYO challenge"><img src="./gallery_files/28.jpg" alt="" loading="lazy"></a>
-          </div>
-        </li>
-        <li class="sort03">
-          <div class="item-content">
-          <a href="./gallery_files/17.jpg" data-fancybox="group3" data-caption="NEO TOKYO challenge"><img src="./gallery_files/17.jpg" alt="" loading="lazy"></a>
-          </div>
-        </li>
-
-        <!--/ブロック-->
-
-        <li class="sort01">
-          <div class="item-content">
-          <a href="./gallery_files/29.jpg" data-fancybox="group1" data-caption="NEO TOKYO challenge"><img src="./gallery_files/29.jpg" alt="" loading="lazy"></a>
-          </div>
-        </li>
-        <li class="sort03">
-          <div class="item-content">
-          <a href="./gallery_files/18.jpg" data-fancybox="group3" data-caption="NEO TOKYO challenge"><img src="./gallery_files/18.jpg" alt="" loading="lazy"></a>
-          </div>
-        </li>
-
-        <!--/ブロック-->
-
-
-        <li class="sort03">
-          <div class="item-content">
-          <a href="./gallery_files/19.jpg" data-fancybox="group3" data-caption="NEO TOKYO challenge"><img src="./gallery_files/19.jpg" alt="" loading="lazy"></a>
-          </div>
-        </li>
-
-
-        <!--/ブロック-->
-
-
-        <li class="sort03">
-          <div class="item-content">
-          <a href="./gallery_files/20.jpg" data-fancybox="group3" data-caption="NEO TOKYO challenge"><img src="./gallery_files/20.jpg" alt="" loading="lazy"></a>
-          </div>
-        </li>
-
-        <!--/ブロック-->
-
-
-        <li class="sort03">
-          <div class="item-content">
-          <a href="./gallery_files/21.jpg" data-fancybox="group3" data-caption="NEO TOKYO challenge"><img src="./gallery_files/21.jpg" alt="" loading="lazy"></a>
-          </div>
-        </li>
-
-        <!--/ブロック-->
-
-
-        <li class="sort03">
-          <div class="item-content">
-          <a href="./gallery_files/22.jpg" data-fancybox="group3" data-caption="NEO TOKYO challenge"><img src="./gallery_files/22.jpg" alt="" loading="lazy"></a>
-          </div>
-        </li>
-
-
-
-    <!--/ブロック-->
-
-    <li class="sort01">
-      <div class="item-content">
-      <a href="./gallery_files/_00.jpg" data-fancybox="group1" data-caption="傘 -Umbrella-"><img src="./gallery_files/_00.jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-    <li class="sort02">
-      <div class="item-content">
-      <a href="./gallery_files/01.jpg" data-fancybox="group2" data-caption="Sketching with ballpoint pen"><img src="./gallery_files/01.jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-    <li class="sort03">
-      <div class="item-content">
-      <a href="./gallery_files/01(1).jpg" data-fancybox="group3" data-caption="Photobash character design"><img src="./gallery_files/01(1).jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-    
-    <!--/ブロック-->
-
-    <li class="sort01">
-      <div class="item-content">
-      <a href="./gallery_files/_01.jpg" data-fancybox="group1" data-caption="傘-Umbrella-"><img src="./gallery_files/_01.jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-    <li class="sort02">
-      <div class="item-content">
-      <a href="./gallery_files/02.jpg" data-fancybox="group2" data-caption="Sketching with ballpoint pen"><img src="./gallery_files/02.jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-    <li class="sort03">
-      <div class="item-content">
-      <a href="./gallery_files/02(1).jpg" data-fancybox="group3" data-caption="Blender test"><img src="./gallery_files/02(1).jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-
-    <!--/ブロック-->
-
-    <li class="sort01">
-      <div class="item-content">
-      <a href="./gallery_files/_02.jpg" data-fancybox="group1" data-caption="傘 -Umbrella-"><img src="./gallery_files/_02.jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-    <li class="sort02">
-      <div class="item-content">
-      <a href="./gallery_files/03.jpg" data-fancybox="group2" data-caption="Sketching with ballpoint pen"><img src="./gallery_files/03.jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-    <li class="sort03">
-      <div class="item-content">
-      <a href="./gallery_files/03(1).jpg" data-fancybox="group3" data-caption="Blender test"><img src="./gallery_files/03(1).jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-
-     <!--/ブロック-->
-
-    <li class="sort01">
-      <div class="item-content">
-      <a href="./gallery_files/_03.jpg" data-fancybox="group1" data-caption="傘 -Umbrella-"><img src="./gallery_files/_03.jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-    <li class="sort02">
-      <div class="item-content">
-      <a href="./gallery_files/04.jpg" data-fancybox="group2" data-caption="Sketching with ballpoint pen"><img src="./gallery_files/04.jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-    <li class="sort03">
-      <div class="item-content">
-      <a href="./gallery_files/04(1).jpg" data-fancybox="group3" data-caption="ZBrush test"><img src="./gallery_files/04(1).jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-  
-    <!--/ブロック-->
-  
-    <li class="sort01">
-      <div class="item-content">
-      <a href="./gallery_files/_04.jpg" data-fancybox="group1" data-caption="Artificial legs girl"><img src="./gallery_files/_04.jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-    <li class="sort02">
-      <div class="item-content">
-      <a href="./gallery_files/05.jpg" data-fancybox="group2" data-caption="Sketching with ballpoint pen"><img src="./gallery_files/05.jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-    <li class="sort03">
-      <div class="item-content">
-      <a href="./gallery_files/05(1).jpg" data-fancybox="group3" data-caption="Motorcycle"><img src="./gallery_files/05(1).jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-  
-    <!--/ブロック-->
-   
-    <li class="sort01">
-      <div class="item-content">
-      <a href="./gallery_files/_05.jpg" data-fancybox="group1" data-caption="Artificial legs girl"><img src="./gallery_files/_05.jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-    <li class="sort03">
-      <div class="item-content">
-      <a href="./gallery_files/06.jpg" data-fancybox="group3" data-caption="Motorcycle"><img src="./gallery_files/06.jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-
-    <!--/ブロック-->
-
-    <li class="sort01">
-      <div class="item-content">
-      <a href="./gallery_files/_06.jpg" data-fancybox="group1" data-caption="Artificial legs girl"><img src="./gallery_files/_06.jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-    <li class="sort02">
-      <div class="item-content">
-      <a href="./gallery_files/07.jpg" data-fancybox="group2" data-caption="Sketching with ballpoint pen"><img src="./gallery_files/07.jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-
-    <li class="sort01">
-      <div class="item-content">
-      <a href="./gallery_files/_07.jpg" data-fancybox="group1" data-caption="Artificial legs girl"><img src="./gallery_files/_07.jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-
-    <li class="sort01">
-      <div class="item-content">
-      <a href="./gallery_files/_06_.jpg" data-fancybox="group1" data-caption="3D printing -artificial legs girl-"><img src="./gallery_files/_06_.jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-    <li class="sort03">
-      <div class="item-content">
-      <a href="./gallery_files/07(1).jpg" data-fancybox="group3" data-caption="薬屋"><img src="./gallery_files/07(1).jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-
-    <!--/ブロック-->
-    <li class="sort01">
-      <div class="item-content">
-      <a href="./gallery_files/_07_.jpg" data-fancybox="group1" data-caption="3D printing -artificial legs girl-"><img src="./gallery_files/_07_.jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-    <li class="sort02">
-      <div class="item-content">
-      <a href="./gallery_files/08.jpg" data-fancybox="group2" data-caption="Sketching with ballpoint pen"><img src="./gallery_files/08.jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-    <li class="sort03">
-      <div class="item-content">
-      <a href="./gallery_files/08(1).jpg" data-fancybox="group3" data-caption="Robot head"><img src="./gallery_files/08(1).jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-
-    <!--/ブロック-->
-
-    <li class="sort01">
-      <div class="item-content">
-      <a href="./gallery_files/_08.jpg" data-fancybox="group1" data-caption="Artificial legs"><img src="./gallery_files/_08.jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-    <li class="sort02">
-      <div class="item-content">
-      <a href="./gallery_files/09.jpg" data-fancybox="group2" data-caption="Sketching with ballpoint pen"><img src="./gallery_files/09.jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-    <li class="sort03">
-      <div class="item-content">
-      <a href="./gallery_files/09(1).jpg" data-fancybox="group3" data-caption="薬屋"><img src="./gallery_files/09(1).jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-
-    <!--/ブロック-->
-
-    <li class="sort02">
-      <div class="item-content">
-      <a href="./gallery_files/10.jpg" data-fancybox="group2" data-caption="Sketching with ballpoint pen"><img src="./gallery_files/10.jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-    <li class="sort03">
-      <div class="item-content">
-      <a href="./gallery_files/10(1).jpg" data-fancybox="group3" data-caption="sci-fi girl torso"><img src="./gallery_files/10(1).jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-
-    <!--/ブロック-->
-
-    <li class="sort01">
-      <div class="item-content">
-      <a href="./gallery_files/_10.jpg" data-fancybox="group1" data-caption="Artificial legs"><img src="./gallery_files/_10.jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-    <li class="sort02">
-      <div class="item-content">
-      <a href="./gallery_files/11.jpg" data-fancybox="group2" data-caption="Samus Aran"><img src="./gallery_files/11.jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-    <li class="sort03">
-      <div class="item-content">
-      <a href="./gallery_files/11(1).jpg" data-fancybox="group3" data-caption="落書き"><img src="./gallery_files/11(1).jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-
-    <!--/ブロック-->
-
-    <li class="sort01">
-      <div class="item-content">
-      <a href="./gallery_files/_11.jpg" data-fancybox="group1" data-caption="Anatomy"><img src="./gallery_files/_11.jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-    <li class="sort02">
-      <div class="item-content">
-      <a href="./gallery_files/12.jpg" data-fancybox="group2" data-caption="RGB!"><img src="./gallery_files/12.jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-    <li class="sort03">
-      <div class="item-content">
-      <a href="./gallery_files/12(1).jpg" data-fancybox="group3" data-caption="mono eye suit"><img src="./gallery_files/12(1).jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-
-    <!--/ブロック-->
-
-    <li class="sort01">
-      <div class="item-content">
-      <a href="./gallery_files/00.jpg" data-fancybox="group1" data-caption="Anatomy"><img src="./gallery_files/00.jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-    <li class="sort02">
-      <div class="item-content">
-      <a href="./gallery_files/13.jpg" data-fancybox="group2" data-caption="Landscape -RGB!-"><img src="./gallery_files/13.jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-    <li class="sort03">
-      <div class="item-content">
-      <a href="./gallery_files/13(1).jpg" data-fancybox="group3" data-caption="Character design for CELESTIAL PICTURES"><img src="./gallery_files/13(1).jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-      
-    <!--/ブロック--> 
-    
-    <li class="sort01">
-    <div class="item-content">
-    <a href="./gallery_files/01(2).jpg" data-fancybox="group1" data-caption="Face"><img src="./gallery_files/01(2).jpg" alt="" loading="lazy"></a>
-    </div>
-    </li>
-    <li class="sort02">
-      <div class="item-content">
-      <a href="./gallery_files/14(1).jpg" data-fancybox="group2" data-caption="Landscape -RGB!-"><img src="./gallery_files/14(1).jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-    
-    <!--/ブロック--> 
-    
-    <li class="sort01">
-      <div class="item-content">
-      <a href="./gallery_files/02(2).jpg" data-fancybox="group1" data-caption="Cyber Cos"><img src="./gallery_files/02(2).jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-    <li class="sort02">
-      <div class="item-content">
-      <a href="./gallery_files/15(1).jpg" data-fancybox="group2" data-caption="INTELLIGENCE MONSTER -CD jacket-"><img src="./gallery_files/15(1).jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-    
-   <!--/ブロック-->
-    
-    <li class="sort01">
-    <div class="item-content">
-    <a href="https://noboundary.web.fc2.com/images/3D/03.jpg" data-fancybox="group1" data-caption="Cyber Cos"><img src="./gallery_files/gallery_new.html" alt="" loading="lazy"></a>
-    </div>
-    </li>
-    <li class="sort02">
-      <div class="item-content">
-      <a href="./gallery_files/16(1).jpg" data-fancybox="group2" data-caption="INTELLIGENCE MONSTER"><img src="./gallery_files/16(1).jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-
-     <!--/ブロック-->
-
-    <li class="sort01">
-    <div class="item-content">
-    <a href="./gallery_files/04(2).jpg" data-fancybox="group1" data-caption="Cyber Cos"><img src="./gallery_files/04(2).jpg" alt="" loading="lazy"></a>
-    </div>
-    </li>
-    <li class="sort02">
-      <div class="item-content">
-      <a href="./gallery_files/17(1).jpg" data-fancybox="group2" data-caption="音楽と暴力 -pixiv年間2010-"><img src="./gallery_files/17(1).jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-    
-     <!--/ブロック-->
-    
-    <li class="sort01">
-    <div class="item-content">
-    <a href="./gallery_files/05(2).jpg" data-fancybox="group1" data-caption="Cyber Cos"><img src="./gallery_files/05(2).jpg" alt="" loading="lazy"></a>
-    </div>
-    </li>
-    <li class="sort02">
-      <div class="item-content">
-      <a href="./gallery_files/18(1).jpg" data-fancybox="group2" data-caption="ハルカゼ"><img src="./gallery_files/18(1).jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-
-     <!--/ブロック-->
-
-    <li class="sort01">
-    <div class="item-content">
-    <a href="./gallery_files/06(1).jpg" data-fancybox="group1" data-caption="Cyber Cos"><img src="./gallery_files/06(1).jpg" alt="" loading="lazy"></a>
-    </div>
-    </li>
-    <li class="sort02">
-      <div class="item-content">
-      <a href="./gallery_files/ugd_kr01.jpg" data-fancybox="group2" data-caption="運命のクランバトル ©株式会社セガ"><img src="./gallery_files/ugd_kr01.jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-    
-     <!--/ブロック-->
-
-    <li class="sort01">
-    <div class="item-content">
-    <a href="./gallery_files/07(2).jpg" data-fancybox="group1" data-caption="Cyber Cos"><img src="./gallery_files/07(2).jpg" alt="" loading="lazy"></a>
-    </div>
-    </li>
-    <li class="sort02">
-      <div class="item-content">
-      <a href="./gallery_files/ugd_kr02.jpg" data-fancybox="group2" data-caption="運命のクランバトル ©株式会社セガ"><img src="./gallery_files/ugd_kr02.jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-
-     <!--/ブロック-->
-
-    <li class="sort01">
-    <div class="item-content">
-    <a href="./gallery_files/08(2).jpg" data-fancybox="group1" data-caption="Cyber Cos"><img src="./gallery_files/08(2).jpg" alt="" loading="lazy"></a>
-    </div>
-    </li>
-    <li class="sort02">
-      <div class="item-content">
-      <a href="./gallery_files/ugd_sd01.jpg" data-fancybox="group2" data-caption="運命のクランバトル ©株式会社セガ"><img src="./gallery_files/ugd_sd01.jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-
-     <!--/ブロック-->
-
-    <li class="sort02">
-      <div class="item-content">
-      <a href="./gallery_files/ugd_sd02.jpg" data-fancybox="group2" data-caption="運命のクランバトル ©株式会社セガ"><img src="./gallery_files/ugd_sd02.jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-
-     <!--/ブロック-->
-
-    <li class="sort02">
-      <div class="item-content">
-      <a href="./gallery_files/ugd_fx01.jpg" data-fancybox="group2" data-caption="運命のクランバトル ©株式会社セガ"><img src="./gallery_files/ugd_fx01.jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-
-     <!--/ブロック-->
-
-    <li class="sort01">
-    <div class="item-content">
-    <a href="./gallery_files/11(2).jpg" data-fancybox="group1" data-caption="Cyber Cos"><img src="./gallery_files/11(2).jpg" alt="" loading="lazy"></a>
-    </div>
-    </li>
-    <li class="sort02">
-      <div class="item-content">
-      <a href="./gallery_files/ugd_fx02.jpg" data-fancybox="group2" data-caption="運命のクランバトル ©株式会社セガ"><img src="./gallery_files/ugd_fx02.jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-
-     <!--/ブロック-->
-
-    <li class="sort01">
-    <div class="item-content">
-    <a href="./gallery_files/14(2).jpg" data-fancybox="group1" data-caption="Robot head"><img src="./gallery_files/14(2).jpg" alt="" loading="lazy"></a>
-    </div>
-    </li>
-    <li class="sort02">
-      <div class="item-content">
-      <a href="./gallery_files/11_.jpg" data-fancybox="group2" data-caption="落書き"><img src="./gallery_files/11_.jpg" alt="" loading="lazy"></a>
-      </div>
-    </li>
-    
-    <!--/ブロック-->
-
-    <li class="sort01">
-    <div class="item-content">
-    <a href="./gallery_files/15(2).jpg" data-fancybox="group1" data-caption="Mech danbo"><img src="./gallery_files/15(2).jpg" alt="" loading="lazy"></a>
-    </div>
-    </li>
-    <li class="sort01">
-    <div class="item-content">
-    <a href="./gallery_files/16(2).jpg" data-fancybox="group1" data-caption="Arien"><img src="./gallery_files/16(2).jpg" alt="" loading="lazy"></a>
-    </div>
-    </li>
-    <li class="sort01">
-    <div class="item-content">
-    <a href="./gallery_files/17(2).jpg" data-fancybox="group1" data-caption="Monster head"><img src="./gallery_files/17(2).jpg" alt="" loading="lazy"></a>
-    </div>
-    </li>
-    <li class="sort01">
-    <div class="item-content">
-    <a href="./gallery_files/18(2).jpg" data-fancybox="group1" data-caption="Monster head"><img src="./gallery_files/18(2).jpg" alt="" loading="lazy"></a>
-    </div>
-    </li>
-    <li class="sort01">
-    <div class="item-content">
-    <a href="./gallery_files/19(1).jpg" data-fancybox="group1" data-caption="大神"><img src="./gallery_files/19(1).jpg" alt="" loading="lazy"></a>
-    </div>
-    </li>
-    <li class="sort01">
-    <div class="item-content">
-    <a href="./gallery_files/20(1).jpg" data-fancybox="group1" data-caption="大神"><img src="./gallery_files/20(1).jpg" alt="" loading="lazy"></a>
-    </div>
-    </li>
-    <li class="sort01">
-    <div class="item-content">
-    <a href="./gallery_files/21(1).jpg" data-fancybox="group1" data-caption="Hexagon"><img src="./gallery_files/21(1).jpg" alt="" loading="lazy"></a>
-    </div>
-    </li>
-    <li class="sort01">
-    <div class="item-content">
-    <a href="./gallery_files/22(1).jpg" data-fancybox="group1" data-caption="Triangle"><img src="./gallery_files/22(1).jpg" alt="" loading="lazy"></a>
-    </div>
-    </li>
-    <li class="sort01">
-    <div class="item-content">
-    <a href="./gallery_files/23.jpg" data-fancybox="group1" data-caption="Torso"><img src="./gallery_files/23.jpg" alt="" loading="lazy"></a>
-    </div>
-    </li>
-    <li class="sort01">
-    <div class="item-content">
-    <a href="./gallery_files/24.jpg" data-fancybox="group1" data-caption="セツコトロニカ 立体出力"><img src="./gallery_files/24.jpg" alt="" loading="lazy"></a>
-    </div>
-    </li>
-
-    <!--2d paintings-->
-    <!--/character design-->
-
-
-</ul><!--/グリッド終了-->
-
-<!--/wrapper--></div>
-<script src="./gallery_files/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="./gallery_files/web-animations.min.js"></script>
-<script src="./gallery_files/muuri.min.js"></script>
-<script src="./gallery_files/jquery.fancybox.min.js"></script>
-
-<!-- gallery -->
-
-<script><!--
-var fc2footerparam = 'charset=' + encodeURIComponent(document.charset ? document.charset : document.characterSet) + '&url=' + encodeURIComponent(document.location) + '&service=0&r=' + Math.floor(Math.random()*99999999999);
-var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
-var script = document.createElement('script');
-script.src = fc2footertag;
-script.charset = "UTF-8";
-script.async = true;
-document.getElementsByTagName('head')[0].appendChild(script);
-//--></script>
-<!-- FC2, inc.-->
-<img src="./gallery_files/counter_img.php" style="display:none" alt="inserted by FC2 system" width="0" height="0">
-<!-- FC2, inc.-->
-<div id="eagle-drag-images" style="position: fixed; top: -100000px;"></div><script charset="UTF-8">var _userPageInfo = [];</script><script charset="UTF-8" src="./gallery_files/fc2_web_user_page.js" defer=""></script></body></html>
+  <!-- gallery -->
+  <div class="wrapper">
+
+    <ul class="sort-btn">
+      <li class="sort00 active">all </li>
+      <li class="sort01">3d digital </li>
+      <li class="sort02">2d paintings </li>
+      <li class="sort03">character design </li>
+    </ul>
+
+
+    <ul class="grid"><!--/グリッド開始-->
+
+
+      <!--/ブロック-->
+
+      <li class="sort01">
+        <div class="item-content">
+          <a href="./gallery_files/26.jpg" data-fancybox="group1" data-caption="NEO TOKYO challenge"><img
+              src="./gallery_files/26.jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort03">
+        <div class="item-content">
+          <a href="./gallery_files/14.jpg" data-fancybox="group3" data-caption="NEO TOKYO challenge"><img
+              src="./gallery_files/14.jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+
+
+      <!--/ブロック-->
+
+      <li class="sort01">
+        <div class="item-content">
+          <a href="./gallery_files/27.jpg" data-fancybox="group1" data-caption="NEO TOKYO challenge"><img
+              src="./gallery_files/27.jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort03">
+        <div class="item-content">
+          <a href="./gallery_files/15.jpg" data-fancybox="group3" data-caption="NEO TOKYO challenge"><img
+              src="./gallery_files/15.jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort03">
+        <div class="item-content">
+          <a href="./gallery_files/16.jpg" data-fancybox="group3" data-caption="NEO TOKYO challenge"><img
+              src="./gallery_files/16.jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+
+      <!--/ブロック-->
+
+      <li class="sort01">
+        <div class="item-content">
+          <a href="./gallery_files/28.jpg" data-fancybox="group1" data-caption="NEO TOKYO challenge"><img
+              src="./gallery_files/28.jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort03">
+        <div class="item-content">
+          <a href="./gallery_files/17.jpg" data-fancybox="group3" data-caption="NEO TOKYO challenge"><img
+              src="./gallery_files/17.jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+
+      <!--/ブロック-->
+
+      <li class="sort01">
+        <div class="item-content">
+          <a href="./gallery_files/29.jpg" data-fancybox="group1" data-caption="NEO TOKYO challenge"><img
+              src="./gallery_files/29.jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort03">
+        <div class="item-content">
+          <a href="./gallery_files/18.jpg" data-fancybox="group3" data-caption="NEO TOKYO challenge"><img
+              src="./gallery_files/18.jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+
+      <!--/ブロック-->
+
+
+      <li class="sort03">
+        <div class="item-content">
+          <a href="./gallery_files/19.jpg" data-fancybox="group3" data-caption="NEO TOKYO challenge"><img
+              src="./gallery_files/19.jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+
+
+      <!--/ブロック-->
+
+
+      <li class="sort03">
+        <div class="item-content">
+          <a href="./gallery_files/20.jpg" data-fancybox="group3" data-caption="NEO TOKYO challenge"><img
+              src="./gallery_files/20.jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+
+      <!--/ブロック-->
+
+
+      <li class="sort03">
+        <div class="item-content">
+          <a href="./gallery_files/21.jpg" data-fancybox="group3" data-caption="NEO TOKYO challenge"><img
+              src="./gallery_files/21.jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+
+      <!--/ブロック-->
+
+
+      <li class="sort03">
+        <div class="item-content">
+          <a href="./gallery_files/22.jpg" data-fancybox="group3" data-caption="NEO TOKYO challenge"><img
+              src="./gallery_files/22.jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+
+
+
+      <!--/ブロック-->
+
+      <li class="sort01">
+        <div class="item-content">
+          <a href="./gallery_files/_00.jpg" data-fancybox="group1" data-caption="傘 -Umbrella-"><img
+              src="./gallery_files/_00.jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort02">
+        <div class="item-content">
+          <a href="./gallery_files/01.jpg" data-fancybox="group2" data-caption="Sketching with ballpoint pen"><img
+              src="./gallery_files/01.jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort03">
+        <div class="item-content">
+          <a href="./gallery_files/01(1).jpg" data-fancybox="group3" data-caption="Photobash character design"><img
+              src="./gallery_files/01(1).jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+
+      <!--/ブロック-->
+
+      <li class="sort01">
+        <div class="item-content">
+          <a href="./gallery_files/_01.jpg" data-fancybox="group1" data-caption="傘-Umbrella-"><img
+              src="./gallery_files/_01.jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort02">
+        <div class="item-content">
+          <a href="./gallery_files/02.jpg" data-fancybox="group2" data-caption="Sketching with ballpoint pen"><img
+              src="./gallery_files/02.jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort03">
+        <div class="item-content">
+          <a href="./gallery_files/02(1).jpg" data-fancybox="group3" data-caption="Blender test"><img
+              src="./gallery_files/02(1).jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+
+      <!--/ブロック-->
+
+      <li class="sort01">
+        <div class="item-content">
+          <a href="./gallery_files/_02.jpg" data-fancybox="group1" data-caption="傘 -Umbrella-"><img
+              src="./gallery_files/_02.jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort02">
+        <div class="item-content">
+          <a href="./gallery_files/03.jpg" data-fancybox="group2" data-caption="Sketching with ballpoint pen"><img
+              src="./gallery_files/03.jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort03">
+        <div class="item-content">
+          <a href="./gallery_files/03(1).jpg" data-fancybox="group3" data-caption="Blender test"><img
+              src="./gallery_files/03(1).jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+
+      <!--/ブロック-->
+
+      <li class="sort01">
+        <div class="item-content">
+          <a href="./gallery_files/_03.jpg" data-fancybox="group1" data-caption="傘 -Umbrella-"><img
+              src="./gallery_files/_03.jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort02">
+        <div class="item-content">
+          <a href="./gallery_files/04.jpg" data-fancybox="group2" data-caption="Sketching with ballpoint pen"><img
+              src="./gallery_files/04.jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort03">
+        <div class="item-content">
+          <a href="./gallery_files/04(1).jpg" data-fancybox="group3" data-caption="ZBrush test"><img
+              src="./gallery_files/04(1).jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+
+      <!--/ブロック-->
+
+      <li class="sort01">
+        <div class="item-content">
+          <a href="./gallery_files/_04.jpg" data-fancybox="group1" data-caption="Artificial legs girl"><img
+              src="./gallery_files/_04.jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort02">
+        <div class="item-content">
+          <a href="./gallery_files/05.jpg" data-fancybox="group2" data-caption="Sketching with ballpoint pen"><img
+              src="./gallery_files/05.jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort03">
+        <div class="item-content">
+          <a href="./gallery_files/05(1).jpg" data-fancybox="group3" data-caption="Motorcycle"><img
+              src="./gallery_files/05(1).jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+
+      <!--/ブロック-->
+
+      <li class="sort01">
+        <div class="item-content">
+          <a href="./gallery_files/_05.jpg" data-fancybox="group1" data-caption="Artificial legs girl"><img
+              src="./gallery_files/_05.jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort03">
+        <div class="item-content">
+          <a href="./gallery_files/06.jpg" data-fancybox="group3" data-caption="Motorcycle"><img
+              src="./gallery_files/06.jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+
+      <!--/ブロック-->
+
+      <li class="sort01">
+        <div class="item-content">
+          <a href="./gallery_files/_06.jpg" data-fancybox="group1" data-caption="Artificial legs girl"><img
+              src="./gallery_files/_06.jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort02">
+        <div class="item-content">
+          <a href="./gallery_files/07.jpg" data-fancybox="group2" data-caption="Sketching with ballpoint pen"><img
+              src="./gallery_files/07.jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+
+      <li class="sort01">
+        <div class="item-content">
+          <a href="./gallery_files/_07.jpg" data-fancybox="group1" data-caption="Artificial legs girl"><img
+              src="./gallery_files/_07.jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+
+      <li class="sort01">
+        <div class="item-content">
+          <a href="./gallery_files/_06_.jpg" data-fancybox="group1"
+            data-caption="3D printing -artificial legs girl-"><img src="./gallery_files/_06_.jpg" alt=""
+              loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort03">
+        <div class="item-content">
+          <a href="./gallery_files/07(1).jpg" data-fancybox="group3" data-caption="薬屋"><img
+              src="./gallery_files/07(1).jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+
+      <!--/ブロック-->
+      <li class="sort01">
+        <div class="item-content">
+          <a href="./gallery_files/_07_.jpg" data-fancybox="group1"
+            data-caption="3D printing -artificial legs girl-"><img src="./gallery_files/_07_.jpg" alt=""
+              loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort02">
+        <div class="item-content">
+          <a href="./gallery_files/08.jpg" data-fancybox="group2" data-caption="Sketching with ballpoint pen"><img
+              src="./gallery_files/08.jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort03">
+        <div class="item-content">
+          <a href="./gallery_files/08(1).jpg" data-fancybox="group3" data-caption="Robot head"><img
+              src="./gallery_files/08(1).jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+
+      <!--/ブロック-->
+
+      <li class="sort01">
+        <div class="item-content">
+          <a href="./gallery_files/_08.jpg" data-fancybox="group1" data-caption="Artificial legs"><img
+              src="./gallery_files/_08.jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort02">
+        <div class="item-content">
+          <a href="./gallery_files/09.jpg" data-fancybox="group2" data-caption="Sketching with ballpoint pen"><img
+              src="./gallery_files/09.jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort03">
+        <div class="item-content">
+          <a href="./gallery_files/09(1).jpg" data-fancybox="group3" data-caption="薬屋"><img
+              src="./gallery_files/09(1).jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+
+      <!--/ブロック-->
+
+      <li class="sort02">
+        <div class="item-content">
+          <a href="./gallery_files/10.jpg" data-fancybox="group2" data-caption="Sketching with ballpoint pen"><img
+              src="./gallery_files/10.jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort03">
+        <div class="item-content">
+          <a href="./gallery_files/10(1).jpg" data-fancybox="group3" data-caption="sci-fi girl torso"><img
+              src="./gallery_files/10(1).jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+
+      <!--/ブロック-->
+
+      <li class="sort01">
+        <div class="item-content">
+          <a href="./gallery_files/_10.jpg" data-fancybox="group1" data-caption="Artificial legs"><img
+              src="./gallery_files/_10.jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort02">
+        <div class="item-content">
+          <a href="./gallery_files/11.jpg" data-fancybox="group2" data-caption="Samus Aran"><img
+              src="./gallery_files/11.jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort03">
+        <div class="item-content">
+          <a href="./gallery_files/11(1).jpg" data-fancybox="group3" data-caption="落書き"><img
+              src="./gallery_files/11(1).jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+
+      <!--/ブロック-->
+
+      <li class="sort01">
+        <div class="item-content">
+          <a href="./gallery_files/_11.jpg" data-fancybox="group1" data-caption="Anatomy"><img
+              src="./gallery_files/_11.jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort02">
+        <div class="item-content">
+          <a href="./gallery_files/12.jpg" data-fancybox="group2" data-caption="RGB!"><img src="./gallery_files/12.jpg"
+              alt="" loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort03">
+        <div class="item-content">
+          <a href="./gallery_files/12(1).jpg" data-fancybox="group3" data-caption="mono eye suit"><img
+              src="./gallery_files/12(1).jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+
+      <!--/ブロック-->
+
+      <li class="sort01">
+        <div class="item-content">
+          <a href="./gallery_files/00.jpg" data-fancybox="group1" data-caption="Anatomy"><img
+              src="./gallery_files/00.jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort02">
+        <div class="item-content">
+          <a href="./gallery_files/13.jpg" data-fancybox="group2" data-caption="Landscape -RGB!-"><img
+              src="./gallery_files/13.jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort03">
+        <div class="item-content">
+          <a href="./gallery_files/13(1).jpg" data-fancybox="group3"
+            data-caption="Character design for CELESTIAL PICTURES"><img src="./gallery_files/13(1).jpg" alt=""
+              loading="lazy"></a>
+        </div>
+      </li>
+
+      <!--/ブロック-->
+
+      <li class="sort01">
+        <div class="item-content">
+          <a href="./gallery_files/01(2).jpg" data-fancybox="group1" data-caption="Face"><img
+              src="./gallery_files/01(2).jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort02">
+        <div class="item-content">
+          <a href="./gallery_files/14(1).jpg" data-fancybox="group2" data-caption="Landscape -RGB!-"><img
+              src="./gallery_files/14(1).jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+
+      <!--/ブロック-->
+
+      <li class="sort01">
+        <div class="item-content">
+          <a href="./gallery_files/02(2).jpg" data-fancybox="group1" data-caption="Cyber Cos"><img
+              src="./gallery_files/02(2).jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort02">
+        <div class="item-content">
+          <a href="./gallery_files/15(1).jpg" data-fancybox="group2"
+            data-caption="INTELLIGENCE MONSTER -CD jacket-"><img src="./gallery_files/15(1).jpg" alt=""
+              loading="lazy"></a>
+        </div>
+      </li>
+
+      <!--/ブロック-->
+
+      <li class="sort01">
+        <div class="item-content">
+          <a href="https://noboundary.web.fc2.com/images/3D/03.jpg" data-fancybox="group1" data-caption="Cyber Cos"><img
+              src="./gallery_files/gallery_new.html" alt="" loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort02">
+        <div class="item-content">
+          <a href="./gallery_files/16(1).jpg" data-fancybox="group2" data-caption="INTELLIGENCE MONSTER"><img
+              src="./gallery_files/16(1).jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+
+      <!--/ブロック-->
+
+      <li class="sort01">
+        <div class="item-content">
+          <a href="./gallery_files/04(2).jpg" data-fancybox="group1" data-caption="Cyber Cos"><img
+              src="./gallery_files/04(2).jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort02">
+        <div class="item-content">
+          <a href="./gallery_files/17(1).jpg" data-fancybox="group2" data-caption="音楽と暴力 -pixiv年間2010-"><img
+              src="./gallery_files/17(1).jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+
+      <!--/ブロック-->
+
+      <li class="sort01">
+        <div class="item-content">
+          <a href="./gallery_files/05(2).jpg" data-fancybox="group1" data-caption="Cyber Cos"><img
+              src="./gallery_files/05(2).jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort02">
+        <div class="item-content">
+          <a href="./gallery_files/18(1).jpg" data-fancybox="group2" data-caption="ハルカゼ"><img
+              src="./gallery_files/18(1).jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+
+      <!--/ブロック-->
+
+      <li class="sort01">
+        <div class="item-content">
+          <a href="./gallery_files/06(1).jpg" data-fancybox="group1" data-caption="Cyber Cos"><img
+              src="./gallery_files/06(1).jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort02">
+        <div class="item-content">
+          <a href="./gallery_files/ugd_kr01.jpg" data-fancybox="group2" data-caption="運命のクランバトル ©株式会社セガ"><img
+              src="./gallery_files/ugd_kr01.jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+
+      <!--/ブロック-->
+
+      <li class="sort01">
+        <div class="item-content">
+          <a href="./gallery_files/07(2).jpg" data-fancybox="group1" data-caption="Cyber Cos"><img
+              src="./gallery_files/07(2).jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort02">
+        <div class="item-content">
+          <a href="./gallery_files/ugd_kr02.jpg" data-fancybox="group2" data-caption="運命のクランバトル ©株式会社セガ"><img
+              src="./gallery_files/ugd_kr02.jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+
+      <!--/ブロック-->
+
+      <li class="sort01">
+        <div class="item-content">
+          <a href="./gallery_files/08(2).jpg" data-fancybox="group1" data-caption="Cyber Cos"><img
+              src="./gallery_files/08(2).jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort02">
+        <div class="item-content">
+          <a href="./gallery_files/ugd_sd01.jpg" data-fancybox="group2" data-caption="運命のクランバトル ©株式会社セガ"><img
+              src="./gallery_files/ugd_sd01.jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+
+      <!--/ブロック-->
+
+      <li class="sort02">
+        <div class="item-content">
+          <a href="./gallery_files/ugd_sd02.jpg" data-fancybox="group2" data-caption="運命のクランバトル ©株式会社セガ"><img
+              src="./gallery_files/ugd_sd02.jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+
+      <!--/ブロック-->
+
+      <li class="sort02">
+        <div class="item-content">
+          <a href="./gallery_files/ugd_fx01.jpg" data-fancybox="group2" data-caption="運命のクランバトル ©株式会社セガ"><img
+              src="./gallery_files/ugd_fx01.jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+
+      <!--/ブロック-->
+
+      <li class="sort01">
+        <div class="item-content">
+          <a href="./gallery_files/11(2).jpg" data-fancybox="group1" data-caption="Cyber Cos"><img
+              src="./gallery_files/11(2).jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort02">
+        <div class="item-content">
+          <a href="./gallery_files/ugd_fx02.jpg" data-fancybox="group2" data-caption="運命のクランバトル ©株式会社セガ"><img
+              src="./gallery_files/ugd_fx02.jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+
+      <!--/ブロック-->
+
+      <li class="sort01">
+        <div class="item-content">
+          <a href="./gallery_files/14(2).jpg" data-fancybox="group1" data-caption="Robot head"><img
+              src="./gallery_files/14(2).jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort02">
+        <div class="item-content">
+          <a href="./gallery_files/11_.jpg" data-fancybox="group2" data-caption="落書き"><img src="./gallery_files/11_.jpg"
+              alt="" loading="lazy"></a>
+        </div>
+      </li>
+
+      <!--/ブロック-->
+
+      <li class="sort01">
+        <div class="item-content">
+          <a href="./gallery_files/15(2).jpg" data-fancybox="group1" data-caption="Mech danbo"><img
+              src="./gallery_files/15(2).jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort01">
+        <div class="item-content">
+          <a href="./gallery_files/16(2).jpg" data-fancybox="group1" data-caption="Arien"><img
+              src="./gallery_files/16(2).jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort01">
+        <div class="item-content">
+          <a href="./gallery_files/17(2).jpg" data-fancybox="group1" data-caption="Monster head"><img
+              src="./gallery_files/17(2).jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort01">
+        <div class="item-content">
+          <a href="./gallery_files/18(2).jpg" data-fancybox="group1" data-caption="Monster head"><img
+              src="./gallery_files/18(2).jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort01">
+        <div class="item-content">
+          <a href="./gallery_files/19(1).jpg" data-fancybox="group1" data-caption="大神"><img
+              src="./gallery_files/19(1).jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort01">
+        <div class="item-content">
+          <a href="./gallery_files/20(1).jpg" data-fancybox="group1" data-caption="大神"><img
+              src="./gallery_files/20(1).jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort01">
+        <div class="item-content">
+          <a href="./gallery_files/21(1).jpg" data-fancybox="group1" data-caption="Hexagon"><img
+              src="./gallery_files/21(1).jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort01">
+        <div class="item-content">
+          <a href="./gallery_files/22(1).jpg" data-fancybox="group1" data-caption="Triangle"><img
+              src="./gallery_files/22(1).jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort01">
+        <div class="item-content">
+          <a href="./gallery_files/23.jpg" data-fancybox="group1" data-caption="Torso"><img src="./gallery_files/23.jpg"
+              alt="" loading="lazy"></a>
+        </div>
+      </li>
+      <li class="sort01">
+        <div class="item-content">
+          <a href="./gallery_files/24.jpg" data-fancybox="group1" data-caption="セツコトロニカ 立体出力"><img
+              src="./gallery_files/24.jpg" alt="" loading="lazy"></a>
+        </div>
+      </li>
+
+      <!--2d paintings-->
+      <!--/character design-->
+
+
+    </ul><!--/グリッド終了-->
+
+    <!--/wrapper-->
+  </div>
+  <script src="./gallery_files/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+  <script src="./gallery_files/web-animations.min.js"></script>
+  <script src="./gallery_files/muuri.min.js"></script>
+  <script src="./gallery_files/jquery.fancybox.min.js"></script>
+
+  <!-- gallery -->
+
+  <script>< !-
+var fc2footerparam = 'charset=' + encodeURIComponent(document.charset ? document.charset : document.characterSet) + '&url=' + encodeURIComponent(document.location) + '&service=0&r=' + Math.floor(Math.random() * 99999999999);
+    var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+    var script = document.createElement('script');
+    script.src = fc2footertag;
+    script.charset = "UTF-8";
+    script.async = true;
+    document.getElementsByTagName('head')[0].appendChild(script);
+    //--></script>
+  <!-- FC2, inc.-->
+  <img src="./gallery_files/counter_img.php" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+  <!-- FC2, inc.-->
+  <div id="eagle-drag-images" style="position: fixed; top: -100000px;"></div>
+  <script charset="UTF-8">var _userPageInfo = [];</script>
+  <script charset="UTF-8" src="./gallery_files/fc2_web_user_page.js" defer=""></script>
+</body>
+
+</html>
