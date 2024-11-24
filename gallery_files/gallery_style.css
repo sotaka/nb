@@ -1,0 +1,187 @@
+/* フォント
+------------------------------------------------------------*/
+@font-face {
+	font-family: 'Questrial-Regular';
+	src: local('Questrial-Regular'),
+	url('../font/Questrial-Regular.ttf') format('truetype');
+
+ }
+
+@font-face {
+	font-family: 'Montserrat-Regular';
+	src: local('Montserrat-Regular'),
+	url('../font/Montserrat-Regular.ttf') format('truetype');
+
+ }
+
+@font-face {
+	font-family: 'NotoSerifJP-Light';
+	src: local('NotoSerifJP-Light'),
+	url('../font/NotoSerifJP-Light.ttf') format('truetype');
+
+ }
+
+@font-face {
+	font-family: 'JosefinSans-Light';
+	src: local('JosefinSans-Light'),
+	url('../font/JosefinSans-Light.ttf') format('truetype');　　　/*上品*/
+}
+
+
+@font-face {
+	font-family: 'Cardo-Regular';
+	src: local('Cardo-Regular'),
+	url('../font/Cardo-Regular.ttf') format('truetype');　　　/*上品*/
+}
+
+
+@font-face {
+	font-family: 'SawarabiMincho-Regular';
+	src: local('SawarabiMincho-Regular'),
+	url('../font/SawarabiMincho-Regular.ttf') format('truetype');　　　/*明朝*/
+}
+
+
+
+
+/*==================================================
+ギャラリーのためのcss
+==================================================*/
+
+body{
+
+color: white;
+padding-top: 40px;
+text-align:center;
+
+}
+
+
+/*＝＝＝並び替えボタンのCSS*/
+.sort-btn{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding:50px 20px;
+
+  color: #fff; 
+  font-size: 16px;
+  font-family:'Questrial-Regular';
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.sort-btn li{
+  background:#222;
+  border-radius:10px;
+  cursor: pointer;
+  padding: 10px;
+  margin:0 10px;
+}
+
+.sort-btn li.active{/*ボタンに現在地＝activeというクラス名がついたら背景色を変更*/
+  background:#888;  
+}
+
+/*横幅が480px以下になった際の指定*/
+@media only screen and (max-width: 480px) {
+.sort-btn{
+  justify-content: space-between;
+}
+  
+.sort-btn li{
+  width:48%;
+  margin:0 0 10px 0;
+  text-align:center;
+  } 
+}
+
+/*＝＝＝Muuriのレイアウトのための調整 */
+.grid {
+  position: relative;/*並び替えの基準点を指定*/
+}
+
+/*各画像の横幅などの設定*/
+.item {
+  display: block;
+  position: absolute;
+  width: 33%;/*横並びで3つ表示*/
+  z-index: 1;
+}
+
+/*内側のボックスの高さが崩れないように維持*/
+.item-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/*画像の横幅を100%にしてレスポンシブ化*/
+.grid img{
+  width:100%;
+  height:auto;
+  vertical-align: bottom;/*画像の下にできる余白を削除*/
+}
+
+/*横幅が768px以下になった際の指定*/
+@media only screen and (max-width: 768px) {
+.item {
+  width: 49.5%;/*横並びで2つ表示*/
+}
+}
+
+/*＝＝＝fancyboxサムネイル背景と画像選択時の枠線の指定*/
+.fancybox-thumbs {
+    background: transparent!important;
+}
+
+.fancybox-thumbs__list a:before {
+    border: 6px solid #FA999B;
+}
+
+
+/*========= レイアウトのためのCSS ===============*/
+ul{
+  margin:0;
+  padding: 0;
+  list-style: none;
+}
+
+a{
+  color: #444;
+}
+
+a:hover,
+a:active{
+  text-decoration: none;
+}
+
+h1{
+  text-align: center;
+  font-size:6vw;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin:30px 0;
+}
+
+p{
+  margin:0 10px 10px 10px;
+  word-wrap : break-word;
+}
+
+
+.subTitle		{text-align: center;font-size: 14px;color: white;}
+
+
+body{
+	-webkit-text-size-adjust:100%;
+	overflow-x: hidden;
+}
+
+
+.wrapper {
+  display: grid; /* グリッドレイアウトを有効にする */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 自動でカラム数を決定 */
+  gap: 20px; /* グリッド間のギャップ */
+  padding: 10px; /* グリッド全体の内側の余白 */
+}
