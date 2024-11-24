@@ -1,15 +1,15 @@
 $(function() {
 	var box = [];
-	$('ul#grid li').each(function() {
+	$('ul.grid li').each(function() {
 			box.push($(this).html());
 	});
 	box.sort(function() {
 			return Math.random() - Math.random();
 	});
-	$('ul#grid li').empty();
+	$('ul.grid li').empty();
 	
 	var i = 0;
-	$('ul#grid li').each(function() {
+	$('ul.grid li').each(function() {
 			$(this).append(box[i]);
 			i++;
 	});

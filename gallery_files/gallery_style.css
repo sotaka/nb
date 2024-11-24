@@ -124,8 +124,9 @@ body {
 
 /*画像の横幅を100%にしてレスポンシブ化*/
 .grid img {
+  object-fit: cover;
   width: 100%;
-  height: auto;
+  height: 100%;
   vertical-align: bottom;
   /*画像の下にできる余白を削除*/
 }
@@ -194,10 +195,21 @@ body {
 .wrapper {
   display: grid;
   /* グリッドレイアウトを有効にする */
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.wrapper .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(240px, 1fr));
   /* 自動でカラム数を決定 */
-  gap: 20px;
+  gap: 4px;
   /* グリッド間のギャップ */
-  padding: 10px;
+  padding: 8px;
   /* グリッド全体の内側の余白 */
+  width: min(100%, 760px);
+  margin: 0 auto;
+}
+
+.wrapper .grid img {
+  border-radius: 4px;
 }
